@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDAH.Flyout.ListUsers">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Lista de usuarios"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <ListView x:Name="Lst_Usuarios">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="50"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="80"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding Id_usuario}" Grid.Row="0" Grid.Column="0" TextColor="Blue"/>
+                                <Label Text="{Binding Nombre}" Grid.Row="0" Grid.Column="1" TextColor="Gray"/>
+                                <Label Text="{Binding App}" Grid.Row="0" Grid.Column="2" TextColor="Gray"/>
+                                <Label Text="{Binding Apm}" Grid.Row="0" Grid.Column="3" TextColor="Gray"/>
+                                <Label Text="{Binding Correo}" Grid.Row="0" Grid.Column="4" TextColor="Gray"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

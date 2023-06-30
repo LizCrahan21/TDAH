@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDAH.Views.Startup.NewAdmin">
+
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+
+
+            <Label Text="Nombre" />
+            <Entry Text="{Binding Nombre}" Placeholder="Nombre" />
+
+            <Label Text="Apellido Paterno" />
+            <Entry Text="{Binding ApellidoPaterno}" Placeholder="Apellido Paterno" />
+
+            <Label Text="Apellido Materno" />
+            <Entry Text="{Binding ApellidoMaterno}" Placeholder="Apellido Materno" />
+
+            <Label Text="Correo Electrónico" />
+            <Entry Text="{Binding Correo}" Placeholder="Correo Electrónico" />
+
+            <Label Text="Contraseña" />
+            <Entry Text="{Binding Contrasena}" Placeholder="Contraseña" IsPassword="True" />
+
+            <Button Text="Registrar" Command="{Binding RegistrarCommand}" HorizontalOptions="CenterAndExpand" Margin="0,20,0,0" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDAH.MainPage"
+             BackgroundColor="#F5F5F5">
+
+    <AbsoluteLayout>
+        <Image Source="fondo.jpg" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+        <StackLayout Padding="20"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+
+            <Label Text="Iniciar sesión" HorizontalOptions="Center" FontSize="37" TextColor="#FF1493" Margin="0,0,0,20" />
+
+            <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="50" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="Txt_Correo" Placeholder="Correo electrónico" PlaceholderColor="#808" />
+            </Frame>
+
+            <Frame BackgroundColor="Transparent" CornerRadius="25" HeightRequest="50" Padding="10" Margin="0,0,0,10">
+                <Entry x:Name="Txt_Contrasena" Placeholder="Contraseña" IsPassword="True" PlaceholderColor="#FF1493" />
+            </Frame>
+
+            <Button x:Name="BtnIniciar" Clicked="BtnIniciar_Clicked" Text="Iniciar sesión" HorizontalOptions="FillAndExpand" BackgroundColor="#FF1493" TextColor="White" HeightRequest="50" CornerRadius="25" Margin="0,0,0,10" />
+
+            <Label Text="¿No tienes cuenta? Registrate aquí" HorizontalOptions="Center" TextColor="Purple" Margin="0,10,0,0">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding IrARegistrarCommand}"/>
+                </Label.GestureRecognizers>
+            </Label>
+            <Image Source="company.png" HorizontalOptions="Center" VerticalOptions="End" Margin="0,270,0,0" />
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
+

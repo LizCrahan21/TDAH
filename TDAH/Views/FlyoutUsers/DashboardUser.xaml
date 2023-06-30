@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDAH.Views.FlyoutUsers.DashboardUser"
+             Title="Inicio">
+
+    <ContentPage.Content>
+        <Grid>
+            <!-- Fondo con imagen -->
+            <Image Source="fondo.jpg" Aspect="AspectFill" />
+
+            <Grid Padding="-1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <StackLayout BackgroundColor="#80000000" Padding="1" Margin="-6,-1">
+                    <Label Text="¡Aquí vamos!" FontSize="24" TextColor="White" HorizontalOptions="Center" Margin="0,10,0,20" />
+                </StackLayout>
+
+                <ScrollView Grid.Row="1" Margin="0,20,0,0">
+                    <StackLayout Padding="20" VerticalOptions="FillAndExpand">
+                        <Label Text="Cursos" FontSize="25" TextColor="White" HorizontalOptions="Center" Margin="0,-18,0,20" />
+                        <!-- Aquí puedes agregar una lista de cursos -->
+                        <AbsoluteLayout>
+                            <Grid BackgroundColor="Transparent">
+                                <Image Source="geografia.jpg" HeightRequest="450" WidthRequest="420" HorizontalOptions="End" VerticalOptions="Start" Margin="15,-130,0,0" />
+                                <Button BackgroundColor="Transparent" Clicked="Button_Clicked" HorizontalOptions="End" VerticalOptions="Start" Margin="15,-130,0,0" />
+                            </Grid>
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="0,0,0,40">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Donde la Tierra te cuenta su historia en mapas y paisajes:" FontSize="18" TextColor="White" Margin="25,10,10,9" Grid.Row="2" />
+                                        <Image Source="campana.png" HeightRequest="40" WidthRequest="40" HorizontalOptions="End" VerticalOptions="Start" Margin="0,-15,-5,0" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                        <AbsoluteLayout>
+                            <Grid BackgroundColor="Transparent">
+                                <Image Source="Ciencias.png" HeightRequest="380" WidthRequest="420" HorizontalOptions="End" VerticalOptions="Start" Margin="15,-200,0,0" />
+                                <StackLayout HorizontalOptions="End" VerticalOptions="Start" Margin="20,-200,0,0">
+                                    <Image Source="campana.png" HeightRequest="40" WidthRequest="40" HorizontalOptions="End" VerticalOptions="Start" Margin="0,100,5,0" />
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="12,-80,0,40">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Descubriendo los secretos de la naturaleza desde el microcosmos hasta el universo:" FontSize="17" TextColor="White" Margin="1,57,10,9" Grid.Row="2" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                        <AbsoluteLayout>
+                            <Grid BackgroundColor="Transparent">
+                                <Image Source="Historia.jpg" HeightRequest="462" WidthRequest="420" HorizontalOptions="End" VerticalOptions="Start" Margin="15,-200,0,0" />
+                                <StackLayout HorizontalOptions="End" VerticalOptions="Start" Margin="20,-200,0,0">
+                                    <Image Source="campana.png" HeightRequest="40" WidthRequest="40" HorizontalOptions="End" VerticalOptions="Start" Margin="0,140,5,0" />
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="12,-80,0,40">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
+                                        <Label Text="Un viaje en el tiempo que nos ayuda a comprender el presente:" FontSize="16" TextColor="White" Margin="55,30,10,200" Grid.Row="2" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </AbsoluteLayout>
+                    </StackLayout>
+                </ScrollView>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
