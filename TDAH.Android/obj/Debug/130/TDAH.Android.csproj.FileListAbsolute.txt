@@ -1492,6 +1492,7 @@ C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\res\drawable\ca
 C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\res\drawable\geografia.jpg
 C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\res\drawable\ciencias.png
 C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\res\drawable\historia.jpg
+C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\res\drawable\geo.jpg
 C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\uploadflags.txt
 C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\resolvedassemblies.hash
 C:\Users\liza_\source\repos\TDAH\TDAH\TDAH.Android\obj\Debug\130\android\assets\DbKeeperNet.Engine.dll

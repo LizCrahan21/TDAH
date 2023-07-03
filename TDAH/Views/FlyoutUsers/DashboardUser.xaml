@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TDAH.Views.FlyoutUsers.DashboardUser"
              Title="Inicio">
-
     <ContentPage.Content>
         <Grid>
             <!-- Fondo con imagen -->
@@ -23,58 +22,60 @@
                     <StackLayout Padding="20" VerticalOptions="FillAndExpand">
                         <Label Text="Cursos" FontSize="25" TextColor="White" HorizontalOptions="Center" Margin="0,-10,0,20" />
                         <!-- Aquí puedes agregar una lista de cursos -->
+
+
                         <AbsoluteLayout>
                             <Grid BackgroundColor="Transparent">
-                                <Image Source="geografia.jpg" HeightRequest="400" WidthRequest="360" HorizontalOptions="End" VerticalOptions="Start" Margin="6,-90,0,0" />
-                                <Button BackgroundColor="Transparent" Clicked="Button_Clicked" HorizontalOptions="End" VerticalOptions="Start" Margin="15,-130,0,0" />
-                            </Grid>
-                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-                                <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="0,0,0,40">
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="Auto" />
-                                        </Grid.RowDefinitions>
-                                        <Label Text="Donde la Tierra te cuenta su historia en mapas y paisajes:" FontSize="16" TextColor="White" Margin="70,-20,10,9" Grid.Row="2" />
-                                        <Image Source="campana.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Start" Margin="0,20,-5,0" />
-                                    </Grid>
-                                </Frame>
-                            </StackLayout>
-                        </AbsoluteLayout>
-                        <AbsoluteLayout>
-                            <Grid BackgroundColor="Transparent">
-                                <Image Source="Ciencias.png" HeightRequest="400" WidthRequest="360" HorizontalOptions="End" VerticalOptions="Start" Margin="6,-220,0,0" />
+                                <Image Source="Geo.jpg" HeightRequest="400" WidthRequest="360" HorizontalOptions="End" VerticalOptions="Start" Margin="-4,-120,0,0" />
                                 <StackLayout HorizontalOptions="End" VerticalOptions="Start" Margin="20,-200,0,0">
-                                    <Image Source="campana.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Start" Margin="0,110,10,0" />
+                                    <Image Source="campana.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Start" Margin="0,205,10,0" />
                                 </StackLayout>
                             </Grid>
-                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional">
                                 <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="12,-80,0,40">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
-                                        <Label Text="Descubriendo los secretos de la naturaleza desde el microcosmos hasta el universo:" FontSize="16" TextColor="White" Margin="9,40,10,9" Grid.Row="2" />
                                     </Grid>
                                 </Frame>
                             </StackLayout>
                         </AbsoluteLayout>
+
                         <AbsoluteLayout>
                             <Grid BackgroundColor="Transparent">
-                                <Image Source="Historia.jpg" HeightRequest="400" WidthRequest="360" HorizontalOptions="End" VerticalOptions="Start" Margin="6,-218,0,0" />
+                                <Image Source="Ciencias.png" HeightRequest="400" WidthRequest="360" HorizontalOptions="End" VerticalOptions="Start" Margin="-4,-220,0,0" />
                                 <StackLayout HorizontalOptions="End" VerticalOptions="Start" Margin="20,-200,0,0">
-                                    <Image Source="campana.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Start" Margin="15,115,10,0" />
+                                    <Image Source="campana.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Start" Margin="0,101,10,0" />
                                 </StackLayout>
                             </Grid>
-                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional">
                                 <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="12,-80,0,40">
                                     <Grid>
                                         <Grid.RowDefinitions>
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
-                                        <Label Text="Un viaje en el tiempo que nos ayuda a comprender el presente:" FontSize="16" TextColor="White" Margin="40,-12,10,200" Grid.Row="2" />
+                                    </Grid>
+                                </Frame>
+                            </StackLayout>
+                        </AbsoluteLayout>
+
+                        <AbsoluteLayout>
+                            <Grid BackgroundColor="Transparent">
+                                <Image Source="Historia.jpg" HeightRequest="400" WidthRequest="360" HorizontalOptions="End" VerticalOptions="Start" Margin="-4,-218,0,0" />
+                                <StackLayout HorizontalOptions="End" VerticalOptions="Start" Margin="20,-200,0,0">
+                                    <Image Source="campana.png" HeightRequest="30" WidthRequest="30" HorizontalOptions="End" VerticalOptions="Start" Margin="15,104,10,0" />
+                                </StackLayout>
+                            </Grid>
+                            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                                <Frame CornerRadius="30" BackgroundColor="Transparent" Margin="12,-80,0,40">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="Auto" />
+                                        </Grid.RowDefinitions>
                                     </Grid>
                                 </Frame>
                             </StackLayout>
